@@ -26,6 +26,6 @@ export default {
   height: 300px;
 }
 .main-second {
-background-color: black;
+background-color: hsl(0deg 0% 11%);
 }
 </style>

@@ -178,6 +178,7 @@ export default {
   list-style-type: none;
   font-size: 14px;
   color: rgb(160, 160, 160);
+  text-transform:capitalize ;
 }
 .list-group-image {
   width: 50%;

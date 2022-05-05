@@ -5,8 +5,8 @@
     </button>
     <div class="cards">
         <div v-for="(items, index) in cards" :key="index" class="card">
-            <img class="debug" :src="items.thumb" alt="">
-            <p class="debug">{{items.series}}</p>
+            <img class="" :src="items.thumb" alt="">
+            <p class="">{{items.series}}</p>
         </div>
         
     </div></div>
@@ -122,7 +122,7 @@ button{
 }
 .card{
     width: calc(100% / 6);
-    font-size: 13px;
+    font-size: 15px;
 }
 .debug{
     border:1px solid black;
