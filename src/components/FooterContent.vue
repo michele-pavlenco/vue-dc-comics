@@ -187,7 +187,7 @@ export default {
   background-size: contain;
   height: 440px;
   margin-top: -10%;
-  margin-bottom: -10%;
+  margin-bottom: -15%;
   float: right;
 }
 .section3 {

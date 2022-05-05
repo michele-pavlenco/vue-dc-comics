@@ -1,7 +1,15 @@
 <template>
+<div class="cards-container">
+    <button>
+        Current series
+    </button>
     <div class="cards">
+        <div v-for="(items, index) in cards" :key="index" class="card">
+            <img class="debug" :src="items.thumb" alt="">
+            <p class="debug">{{items.series}}</p>
+        </div>
         
-    </div>
+    </div></div>
 </template>
 <script>
 export default {
@@ -87,5 +95,37 @@ data(){
 }
 </script>
 <style scoped>
+.cards-container {
+    position: relative;
+}
+button{
+    height: 40px;
+    width: 170px;
+    position: absolute;
+    margin-top:-15px ;
+    background-color:  #0c7cec;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.card img{
+    height: 200px;
+    background-size: contain;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding: 10px;
+    padding-top: 40px;
+
+}
+.card{
+    width: calc(100% / 6);
+    font-size: 13px;
+}
+.debug{
+    border:1px solid black;
+}
 
 </style>
