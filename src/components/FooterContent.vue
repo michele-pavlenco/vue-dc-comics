@@ -96,7 +96,7 @@
           </div>
         </div>
       </div>
-    </section>
+    
     <section class="section3">
       <div class="container">
         <div class="footer-third">
@@ -115,6 +115,7 @@
           </ul>
         </div>
       </div>
+    </section>
     </section>
   </footer>
 </template>
@@ -155,7 +156,7 @@ export default {
 }
 .section2 {
   background-image: url(../assets/immagini/footer-bg.jpg);
-  background-size: contain;
+  background-size: cover;
   height: 350px;
 }
 .footer-second {
@@ -164,8 +165,8 @@ export default {
 }
 .list-group {
   display: flex;
-  width: 50%;
   color: white;
+  height: 300px;
 }
 .list-group li:first-child {
   font-weight: bold;
@@ -180,16 +181,17 @@ export default {
 }
 .list-group-image {
   width: 50%;
+  overflow:hidden;
 }
-.list-group-image img {
+.list-group-image img{
   background-size: contain;
-  height: 90%;
+  height: 440px;
   margin-top: -10%;
+  margin-bottom: -10%;
   float: right;
 }
 .section3 {
   background-color: #303030;
-  height: 80px;
 }
 .footer-third {
   display: flex;
